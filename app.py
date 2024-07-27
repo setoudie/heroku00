@@ -17,7 +17,7 @@ def test():
 def test00():
     db = get_db_connection()
     curs = db.cursor()
-    curs.execute("""CREATE TABLE Customers (CustomerName varchar(255), ContactName varchar(255),FirstName varchar(255),Address varchar(255),City varchar(255));""")
+    curs.execute("""CREATE TABLE IF NOT EXISTS Customers (CustomerName varchar(255), ContactName varchar(255),FirstName varchar(255),Address varchar(255),City varchar(255));""")
     curs.execute("""INSERT INTO Customers (CustomerName, ContactName, Address, City)
 VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger');""")
     curs.execute("""SELECT * FROM Customers""")
