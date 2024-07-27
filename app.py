@@ -14,7 +14,7 @@ def test():
 
 
 @app.route('/test0')
-def test0():
+def test00():
     db = get_db_connection()
     curs = db.cursor()
     curs.execute("""CREATE TABLE Customers (CustomerName varchar(255), ContactName varchar(255),FirstName varchar(255),Address varchar(255),City varchar(255));""")
