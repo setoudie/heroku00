@@ -14,4 +14,4 @@
 7. verifiez les configurations
    `heroku config --app test001`
 8. Tout pusher avec heroku pour lancer l'app
-   `heroku config --app test001`
+   `git push heroku main`
